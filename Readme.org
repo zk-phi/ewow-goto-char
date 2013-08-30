@@ -1,0 +1,14 @@
+* lib_goto_char.ahk
+
+a command like "f" in vim for EWOW.
+
+** Usage
+
+Load this library
+
+: #Include lib_goto_char.ahk
+
+and bind keys.
+
+: #If !ignored_frame() && !cx
+: !^f:: goto_char()
